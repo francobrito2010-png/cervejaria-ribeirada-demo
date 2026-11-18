@@ -26,3 +26,6 @@
 
 ## v2.1 — 2026-11-18
 - Nova foto do viveiro (foto real do Google Maps melhorada, sem pessoas) no bloco "Do viveiro para a mesa" e na galeria.
+
+## v2.2 — 2026-11-18
+- Logótipo oficial (tubarões em aguarela + Ribeirada) no cabeçalho, na carta e no rodapé; versão com letra branca para o azul-marinho.

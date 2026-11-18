@@ -288,3 +288,10 @@ p { margin: 0 0 1.1em; }
 @media print {
   .hdr, .fab, .cookies, .drawer, .hero, .split, .quotes, .gal, .book, .map { display: none !important; }
 }
+
+/* ================= LOGÓTIPO (imagem oficial) ================= */
+.hdr__logoimg { display: block; height: 66px; width: auto; }
+.carta__logo { display: block; width: min(420px, 82%); height: auto; margin: 0 auto 14px; }
+.ftr__brand img { display: block; width: min(460px, 80vw); height: auto; }
+@media (max-width: 900px) { .hdr__logoimg { height: 52px; } }
+@media (max-width: 560px) { .hdr__logoimg { height: 46px; } }
