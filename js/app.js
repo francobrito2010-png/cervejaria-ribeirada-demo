@@ -254,6 +254,9 @@
 
   render();
   onScroll();
+  addEventListener("load", onScroll);
+  addEventListener("pageshow", onScroll);
+  addEventListener("resize", onScroll, { passive: true });
   /* Vídeo do topo: sem animação para quem pede menos movimento; tenta reproduzir no iPhone */
   const hv = $("#heroVideo");
   if (hv) {

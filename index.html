@@ -24,7 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/styles.css?v=1.2">
 <link rel="preload" as="image" href="img/hero-poster.webp" fetchpriority="high">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Restaurant","name":"Cervejaria da Ribeirada","url":"https://francobrito2010-png.github.io/cervejaria-ribeirada-demo/","image":"https://francobrito2010-png.github.io/cervejaria-ribeirada-demo/img/og.jpg","telephone":"+351219345551","email":"geral@cervejariadaribeirada.com","servesCuisine":["Marisco","Portuguesa"],"priceRange":"€€","acceptsReservations":"True","foundingDate":"2001","address":{"@type":"PostalAddress","streetAddress":"Av. Amália Rodrigues 10C","postalCode":"2675-623","addressLocality":"Odivelas","addressCountry":"PT"},"geo":{"@type":"GeoCoordinates","latitude":38.7970342,"longitude":-9.1808891},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Thursday","Friday","Saturday","Sunday"],"opens":"12:00","closes":"23:30"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.2","reviewCount":"1747"},"sameAs":["https://www.instagram.com/cervejariadaribeirada/"]}
@@ -59,15 +59,20 @@
 </aside>
 
 <main id="main">
-  <section class="hero" id="top">
-    <div class="hero__media"><video id="heroVideo" src="img/hero.mp4" poster="img/hero-poster.webp" autoplay muted loop playsinline preload="auto" width="720" height="1280" aria-label="O nome Ribeirada mergulha no mar, seguido da sala, do marisco e da adega"></video></div>
-    <div class="hero__text">
+  <section class="hero" id="top" aria-label="Cervejaria da Ribeirada">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <video class="hero__video" id="heroVideo" src="img/hero.mp4?v=1.2" poster="img/hero-poster.webp" autoplay muted loop playsinline preload="auto" width="720" height="1280" aria-label="O nome Ribeirada mergulha no mar, seguido da sala, do marisco e da adega"></video>
+    <div class="hero__over">
       <p class="eyebrow"><span class="stars" aria-hidden="true">★</span> <span id="heroRating">4,2 · 1747 críticas Google</span></p>
-      <h1 id="heroTitulo">O mar chega vivo à sua mesa.</h1>
-      <p id="heroTexto" class="hero__lead">Marisco do viveiro, cozinha portuguesa de tacho e uma adega à altura. Em Odivelas, desde 2001.</p>
-      <div class="hero__ctas"><a class="btn btn--accent" href="#reservas" data-i18n="bookTable">Reservar mesa</a><a class="btn btn--ghost" href="#carta" data-i18n="seeMenu">Ver a carta</a></div>
-      <p class="hero__open" id="openNow"></p>
+      <div class="hero__ctas"><a class="btn btn--accent" href="#reservas" data-i18n="bookTable">Reservar mesa</a><a class="btn btn--glass" href="#carta" data-i18n="seeMenu">Ver a carta</a></div>
     </div>
+    <a class="hero__down" href="#intro" aria-label="Descer"><span aria-hidden="true">↓</span></a>
+  </section>
+
+  <section class="intro" id="intro">
+    <h1 id="heroTitulo">O mar chega vivo à sua mesa.</h1>
+    <p id="heroTexto" class="hero__lead">Marisco do viveiro, cozinha portuguesa de tacho e uma adega à altura. Em Odivelas, desde 2001.</p>
+    <p class="hero__open" id="openNow"></p>
   </section>
 
   <section class="sec" id="destaques">
@@ -160,7 +165,7 @@
   <p class="small muted" id="ftrLegal"></p>
 </footer>
 
-<a class="fab" id="fab" href="#reservas"><span aria-hidden="true">☎</span> <span data-i18n="book">Reservar</span></a>
+<a class="fab hide" id="fab" href="#reservas"><span aria-hidden="true">☎</span> <span data-i18n="book">Reservar</span></a>
 
 <dialog class="modal" id="modal" aria-label="Detalhe do prato"><div id="modalBody"></div></dialog>
 <dialog class="modal modal--sm" id="bookDone" aria-label="Pedido de reserva"><div id="bookDoneBody"></div></dialog>
@@ -173,7 +178,7 @@
 
 <noscript><div class="noscript">Cervejaria da Ribeirada · Av. Amália Rodrigues 10C, Odivelas · Reservas: 21 934 5551 · 12:00–23:30 (encerrado à quarta)</div></noscript>
 
-<script src="data.js"></script>
-<script src="js/app.js"></script>
+<script src="data.js?v=1.2"></script>
+<script src="js/app.js?v=1.2"></script>
 </body>
 </html>
