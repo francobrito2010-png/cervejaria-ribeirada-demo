@@ -17,3 +17,9 @@
 - Secções Do Viveiro, Petiscos, Do Mar, Da Terra, Doces e Adega, com selos "Vivo" e "Mais pedido" e a sugestão "Mariscada Ribeirada".
 - Pratos baseados nas críticas Google (sapateira, santola, lavagante azul, camarão, presunto, queijo amanteigado, pão torrado) e nos vídeos do Instagram.
 - Removida a grelha de destaques com fotos. FAQ: estacionamento gratuito (Google).
+
+## v2.0 — 2026-11-18
+- Redesenho completo inspirado no estilo clássico de marisqueira premium (referência: Bentley’s, Londres).
+- Azul-marinho, pedra e branco; títulos em maiúsculas espaçadas; botões rectangulares.
+- Cabeçalho com logótipo central (tubarão + Ribeirada); vídeo em ecrã inteiro com o título a aparecer depois do nome mergulhar.
+- Blocos alternados texto/foto, carta em cartão de papel, críticas rotativas, galeria em faixa, reservas e contactos simplificados.
