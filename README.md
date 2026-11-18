@@ -22,3 +22,6 @@ Proposta de site criada por Franco Brito para a **Cervejaria da Ribeirada** (Odi
 
 ## Ver no computador
 `node servir.mjs` e abrir http://localhost:5190
+
+## Imagens
+- `img/viveiro.webp`: foto real do viveiro (Google Maps) melhorada com IA — **provisória**, trocar por uma foto real sem pessoas quando o cliente a enviar.

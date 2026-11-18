@@ -23,3 +23,6 @@
 - Azul-marinho, pedra e branco; títulos em maiúsculas espaçadas; botões rectangulares.
 - Cabeçalho com logótipo central (tubarão + Ribeirada); vídeo em ecrã inteiro com o título a aparecer depois do nome mergulhar.
 - Blocos alternados texto/foto, carta em cartão de papel, críticas rotativas, galeria em faixa, reservas e contactos simplificados.
+
+## v2.1 — 2026-11-18
+- Nova foto do viveiro (foto real do Google Maps melhorada, sem pessoas) no bloco "Do viveiro para a mesa" e na galeria.
