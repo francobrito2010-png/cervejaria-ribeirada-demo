@@ -254,6 +254,12 @@
 
   render();
   onScroll();
+  /* Vídeo do topo: sem animação para quem pede menos movimento; tenta reproduzir no iPhone */
+  const hv = $("#heroVideo");
+  if (hv) {
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) { hv.removeAttribute("autoplay"); hv.pause(); }
+    else { hv.muted = true; const p = hv.play(); if (p && p.catch) p.catch(() => {}); }
+  }
   const prev = store.get("cookies");
   if (prev === "sim") loadMap(); else if (!prev) ck.hidden = false;
 })();

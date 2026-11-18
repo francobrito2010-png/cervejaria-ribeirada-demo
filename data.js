@@ -44,7 +44,7 @@ window.SITE = {
       en: "Shellfish from our tank, traditional Portuguese cooking and a cellar to match. In Odivelas since 2001.",
       es: "Marisco del vivero, cocina portuguesa de siempre y una bodega a la altura. En Odivelas, desde 2001."
     },
-    imagem: "img/hero.webp"
+    video: "img/hero.mp4", poster: "img/hero-poster.webp" // vídeo do Reel DYFfiPvtzbB (0–9 s)
   },
 
   // ---- Destaques (cartões com foto → ficha) — nomes a confirmar com o cliente ----
