@@ -304,3 +304,97 @@ p { margin: 0 0 1em; }
 @media print {
   .faixa, .hdr, .fab, .cookies, .drawer, .hero, #reels, #galeria, #reservas, .map { display: none !important; }
 }
+
+/* ================= CARTA DO MAR (estilo marítimo, sempre em azul profundo) ================= */
+.carta { --c-ink: #eaf2fa; --c-mut: #a9bdd3; --c-acc: #5cc4ff; --c-line: rgb(92 196 255 / .28);
+  position: relative; overflow: hidden; isolation: isolate; padding: clamp(64px, 9vw, 120px) 16px; color: var(--c-ink);
+  background: radial-gradient(ellipse 90% 60% at 50% 0%, #0f3a63 0%, #08192d 45%, #040b16 100%); }
+.carta__waves { position: absolute; top: 0; left: 0; width: 200%; height: 120px; z-index: -1; fill: none; stroke: rgb(92 196 255 / .14); stroke-width: 1.5; animation: waves 26s linear infinite; }
+@keyframes waves { to { transform: translateX(-50%); } }
+.carta__bubbles i { position: absolute; bottom: -20px; z-index: -1; width: 10px; height: 10px; border-radius: 50%; border: 1px solid rgb(160 220 255 / .35); background: radial-gradient(circle at 30% 30%, rgb(255 255 255 / .35), transparent 60%); animation: bubble 14s linear infinite; }
+.carta__bubbles i:nth-child(1) { left: 6%; animation-delay: 0s; }
+.carta__bubbles i:nth-child(2) { left: 18%; width: 6px; height: 6px; animation-delay: 3s; animation-duration: 11s; }
+.carta__bubbles i:nth-child(3) { left: 34%; width: 14px; height: 14px; animation-delay: 6s; animation-duration: 17s; }
+.carta__bubbles i:nth-child(4) { left: 61%; width: 7px; height: 7px; animation-delay: 1.5s; }
+.carta__bubbles i:nth-child(5) { left: 77%; animation-delay: 8s; animation-duration: 12s; }
+.carta__bubbles i:nth-child(6) { left: 88%; width: 12px; height: 12px; animation-delay: 4.5s; animation-duration: 16s; }
+.carta__bubbles i:nth-child(7) { left: 95%; width: 5px; height: 5px; animation-delay: 10s; }
+@keyframes bubble { 0% { transform: translateY(0); opacity: 0; } 10% { opacity: 1; } 100% { transform: translate(20px, -110vh); opacity: 0; } }
+
+.carta__card { position: relative; max-width: 1100px; margin: 0 auto; padding: clamp(28px, 5vw, 64px) clamp(18px, 5vw, 64px); border: 1px solid var(--c-line); outline: 1px solid rgb(92 196 255 / .1); outline-offset: 8px; border-radius: 4px;
+  background: linear-gradient(180deg, rgb(10 28 50 / .88), rgb(5 13 25 / .94)); box-shadow: 0 30px 80px rgb(0 0 0 / .5), inset 0 0 120px rgb(92 196 255 / .05); }
+.carta__corner { position: absolute; width: 26px; height: 26px; border: 2px solid var(--c-acc); opacity: .8; }
+.carta__corner::after { content: ""; position: absolute; width: 6px; height: 6px; border-radius: 50%; background: var(--c-acc); }
+.carta__corner--tl { top: 10px; left: 10px; border-right: 0; border-bottom: 0; } .carta__corner--tl::after { top: 4px; left: 4px; }
+.carta__corner--tr { top: 10px; right: 10px; border-left: 0; border-bottom: 0; } .carta__corner--tr::after { top: 4px; right: 4px; }
+.carta__corner--bl { bottom: 10px; left: 10px; border-right: 0; border-top: 0; } .carta__corner--bl::after { bottom: 4px; left: 4px; }
+.carta__corner--br { bottom: 10px; right: 10px; border-left: 0; border-top: 0; } .carta__corner--br::after { bottom: 4px; right: 4px; }
+
+.carta__head { text-align: center; margin-bottom: 28px; }
+.carta__head .kicker { color: var(--c-acc); margin: 6px 0 0; }
+.carta__title { font-family: var(--f-logo); font-weight: 400; font-size: clamp(3.4rem, 9vw, 6rem); line-height: 1; margin: 4px 0 6px; color: #fff; text-shadow: 0 0 28px rgb(92 196 255 / .45); }
+.carta__sub { color: var(--c-mut); font-size: .78rem; letter-spacing: .22em; text-transform: uppercase; margin: 0; }
+.rope { width: min(280px, 70%); height: 8px; margin: 20px auto 0; border-radius: 8px; opacity: .7;
+  background: repeating-linear-gradient(135deg, #5cc4ff 0 4px, #1c4c75 4px 8px); -webkit-mask: linear-gradient(90deg, transparent, #000 20%, #000 80%, transparent); mask: linear-gradient(90deg, transparent, #000 20%, #000 80%, transparent); }
+
+/* Tubarão branco */
+.shark { display: block; width: min(440px, 86%); height: auto; margin: 0 auto 4px; overflow: visible; filter: drop-shadow(0 14px 30px rgb(92 196 255 / .28)); animation: swim 7s ease-in-out infinite; }
+.shark__line { fill: none; stroke: #5cc4ff; stroke-width: 1.6; opacity: .6; }
+.shark__gill { fill: none; stroke: #2f77ab; stroke-width: 2.4; stroke-linecap: round; }
+.shark__mouth { fill: none; stroke: #2f77ab; stroke-width: 2.2; stroke-linecap: round; }
+.shark__tail { transform-box: view-box; transform-origin: 78px 112px; animation: tail 1.8s ease-in-out infinite; }
+@keyframes swim { 0%, 100% { transform: translate(-12px, 0) rotate(-1.2deg); } 50% { transform: translate(12px, -6px) rotate(1deg); } }
+@keyframes tail { 0%, 100% { transform: rotate(-7deg); } 50% { transform: rotate(7deg); } }
+
+/* Navegação da carta */
+.carta__nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 0 auto 30px; }
+.carta__nav a { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 999px; border: 1px solid var(--c-line); color: var(--c-ink); text-decoration: none; font-weight: 600; font-size: .9rem; background: rgb(92 196 255 / .05); transition: background .2s, border-color .2s, color .2s; }
+.carta__nav a:hover { background: var(--c-acc); color: #03121f; border-color: var(--c-acc); }
+.carta__nav a:hover .cs__ico { stroke: #03121f; }
+.carta__nav .cs__ico { width: 18px; height: 18px; }
+
+/* Sugestão da casa */
+.carta__special { display: grid; grid-template-columns: auto 1fr auto; gap: 20px; align-items: center; padding: 22px 26px; margin: 0 0 40px; border: 1px dashed rgb(92 196 255 / .55); border-radius: 16px; background: linear-gradient(90deg, rgb(92 196 255 / .12), rgb(92 196 255 / .03)); }
+.carta__special:empty { display: none; }
+.sp__badge { width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center; background: var(--c-acc); color: #03121f; font-size: 1.5rem; box-shadow: 0 0 0 6px rgb(92 196 255 / .15); }
+.sp__k { margin: 0; font-size: .72rem; letter-spacing: .2em; text-transform: uppercase; color: var(--c-acc); font-weight: 700; }
+.sp__t { margin: 2px 0 4px; font-size: 1.9rem; color: #fff; }
+.sp__d { margin: 0; color: var(--c-mut); }
+.sp__p { margin: 0; font-family: var(--f-title); font-size: 1.5rem; font-weight: 600; color: #fff; white-space: nowrap; }
+
+/* Secções da carta */
+.carta__cols { display: grid; grid-template-columns: 1fr 1fr; gap: 44px 64px; align-items: start; }
+.cs { scroll-margin-top: calc(var(--hdr) + 80px); }
+.cs__head { display: flex; align-items: center; gap: 12px; margin-bottom: 6px; }
+.cs__head h3 { margin: 0; font-size: 1.75rem; letter-spacing: .04em; color: #fff; white-space: nowrap; }
+.cs__ico { width: 30px; height: 30px; flex: none; fill: none; stroke: var(--c-acc); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.cs__line { flex: 1; height: 1px; background: linear-gradient(90deg, var(--c-acc), transparent); opacity: .6; }
+.cs__nota { color: var(--c-mut); font-style: italic; font-size: .92rem; margin: 4px 0 6px; }
+.cs__list { list-style: none; margin: 0; padding: 0; }
+.cs__list li { padding: 11px 0; border-bottom: 1px solid rgb(92 196 255 / .1); }
+.it__row { display: flex; align-items: baseline; gap: 10px; }
+.it__n { font-family: var(--f-title); font-size: 1.32rem; font-weight: 600; color: #fff; }
+.it__dots { flex: 1; min-width: 16px; border-bottom: 1px dotted rgb(169 189 211 / .45); transform: translateY(-5px); }
+.it__p { font-weight: 700; color: var(--c-acc); white-space: nowrap; font-size: .95rem; }
+.it__sub { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 3px; color: var(--c-mut); font-size: .86rem; }
+.selo { display: inline-flex; align-items: center; gap: 4px; padding: 2px 9px; border-radius: 999px; font-size: .68rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+.selo--fav { background: rgb(245 196 81 / .16); color: #f5c451; border: 1px solid rgb(245 196 81 / .4); }
+.selo--vivo { background: rgb(92 196 255 / .14); color: var(--c-acc); border: 1px solid rgb(92 196 255 / .4); }
+.carta__foot { margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--c-line); display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between; }
+.carta__foot p { margin: 0; color: var(--c-mut); font-size: .84rem; max-width: 560px; }
+.carta .btn--accent { background: var(--c-acc); color: #03121f; }
+
+@media (max-width: 860px) {
+  .carta__cols { grid-template-columns: 1fr; gap: 36px; }
+  .carta__nav { position: sticky; top: calc(var(--hdr) + 4px); z-index: 5; flex-wrap: nowrap; justify-content: flex-start; overflow-x: auto; scrollbar-width: none; margin: 0 -18px 26px; padding: 10px 18px; background: rgb(6 15 28 / .92); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-block: 1px solid var(--c-line); }
+  .carta__nav::-webkit-scrollbar { display: none; }
+  .carta__nav a { flex: none; }
+  .carta__special { grid-template-columns: auto 1fr; padding: 18px; }
+  .sp__p { grid-column: 1 / -1; font-size: 1.25rem; }
+  .sp__badge { width: 46px; height: 46px; font-size: 1.2rem; }
+  .sp__t { font-size: 1.5rem; }
+  .carta__foot { justify-content: center; text-align: center; }
+  .carta__corner { width: 18px; height: 18px; }
+}
+@media (max-width: 420px) { .it__n { font-size: 1.18rem; } .cs__head h3 { font-size: 1.5rem; } }
+@media (prefers-reduced-motion: reduce) { .shark, .shark__tail, .carta__waves, .carta__bubbles i { animation: none !important; } }

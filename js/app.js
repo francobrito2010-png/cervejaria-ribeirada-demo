@@ -14,7 +14,7 @@
   const UI = {
     pt: { skip: "Saltar para o conteúdo", since: "Desde 2001", book: "Reservar", bookTable: "Reservar mesa", seeMenu: "Ver a carta",
       k1: "Do viveiro para a mesa", h1: "O que nos pedem sempre", p1: "Toque num prato para ver os detalhes.",
-      k2: "A carta", h2: "Marisco ao peso, cozinha de sempre", demoPrices: "Preços indicativos nesta proposta — a confirmar com a casa. Informe-nos de alergias ou intolerâncias.",
+      k2: "A carta", h2: "Carta do Mar", cartaSub: "Do viveiro para a mesa · Odivelas · Desde 2001", fav: "Mais pedido", vivo: "Vivo", special: "Sugestão da casa", demoPrices: "Preços indicativos nesta proposta — a confirmar com a casa. Informe-nos de alergias ou intolerâncias.",
       k3: "Desde 2001", h3: "Mais de 20 anos a servir Odivelas", p3: "Abrimos em 2001 na Ribeirada com uma ideia simples: marisco fresco, vivo no nosso viveiro, e a cozinha portuguesa que se come em casa. Hoje continuamos iguais no que importa.",
       f1: "a abrir portas", f2: "no Google", f3: "críticas de clientes", k4: "A casa", h4: "Sala, viveiro e adega", h5: "Veja-nos em movimento",
       k6: "O que dizem", p6: "Média de 1747 críticas no Google Maps.", k7: "Reservas", h7: "Guarde a sua mesa",
@@ -23,7 +23,7 @@
       h8: "Perguntas frequentes", k9: "Visite-nos", h9: "Na Ribeirada, em Odivelas", showMap: "Ver mapa", mapNote: "O mapa é do Google e só carrega se aceitar.",
       ftC: "Contactos", ftH: "Horário", ftI: "Informação", ftP: "Privacidade e cookies", ftCk: "Preferências de cookies",
       ckTxt: "Usamos apenas armazenamento essencial. O mapa do Google só carrega se aceitar.", ckNo: "Recusar", ckYes: "Aceitar",
-      nav: [["Carta", "#carta"], ["Destaques", "#destaques"], ["A casa", "#galeria"], ["Críticas", "#criticas"], ["Contacto", "#contacto"]],
+      nav: [["Carta do Mar", "#carta"], ["A casa", "#galeria"], ["Críticas", "#criticas"], ["Contacto", "#contacto"]],
       openNow: "Aberto agora · até às 23:30", closedToday: "Hoje encerrado · abrimos amanhã às 12:00", opensAt: "Abre hoje às 12:00", closedNow: "Fechado agora · abre às 12:00",
       directions: "Como chegar", reviews: "críticas Google", askDish: "Reservar e pedir este prato", close: "Fechar",
       errDate: "Escolha um dia.", errClosed: "À quarta-feira estamos encerrados. Escolha outro dia.", errName: "Diga-nos o seu nome.", errPast: "Escolha um dia a partir de hoje.",
@@ -34,7 +34,7 @@
       sumDate: "Dia", sumTime: "Hora", sumPeople: "Pessoas", sumName: "Nome" },
     en: { skip: "Skip to content", since: "Since 2001", book: "Book", bookTable: "Book a table", seeMenu: "See the menu",
       k1: "From our tank to your table", h1: "What everyone orders", p1: "Tap a dish to see details.",
-      k2: "The menu", h2: "Shellfish by weight, classic cooking", demoPrices: "Indicative prices in this proposal — to be confirmed. Please tell us about allergies or intolerances.",
+      k2: "The menu", h2: "The Sea Menu", cartaSub: "From our tank to your table · Odivelas · Since 2001", fav: "Most ordered", vivo: "Live", special: "House suggestion", demoPrices: "Indicative prices in this proposal — to be confirmed. Please tell us about allergies or intolerances.",
       k3: "Since 2001", h3: "Over 20 years serving Odivelas", p3: "We opened in 2001 in Ribeirada with a simple idea: fresh shellfish, alive in our own tank, and the Portuguese food you'd eat at home. We haven't changed what matters.",
       f1: "opening our doors", f2: "on Google", f3: "guest reviews", k4: "The house", h4: "Dining room, tank and cellar", h5: "See us in motion",
       k6: "What guests say", p6: "Average of 1,747 reviews on Google Maps.", k7: "Bookings", h7: "Save your table",
@@ -43,7 +43,7 @@
       h8: "FAQ", k9: "Visit us", h9: "In Ribeirada, Odivelas", showMap: "Show map", mapNote: "The map is by Google and only loads if you accept.",
       ftC: "Contact", ftH: "Opening hours", ftI: "Information", ftP: "Privacy & cookies", ftCk: "Cookie preferences",
       ckTxt: "We only use essential storage. The Google map loads only if you accept.", ckNo: "Decline", ckYes: "Accept",
-      nav: [["Menu", "#carta"], ["Highlights", "#destaques"], ["The house", "#galeria"], ["Reviews", "#criticas"], ["Contact", "#contacto"]],
+      nav: [["Sea Menu", "#carta"], ["The house", "#galeria"], ["Reviews", "#criticas"], ["Contact", "#contacto"]],
       openNow: "Open now · until 23:30", closedToday: "Closed today · we open tomorrow at 12:00", opensAt: "Opens today at 12:00", closedNow: "Closed now · opens at 12:00",
       directions: "Directions", reviews: "Google reviews", askDish: "Book and order this dish", close: "Close",
       errDate: "Pick a day.", errClosed: "We're closed on Wednesdays. Please pick another day.", errName: "Please tell us your name.", errPast: "Pick a day from today onwards.",
@@ -54,7 +54,7 @@
       sumDate: "Day", sumTime: "Time", sumPeople: "Guests", sumName: "Name" },
     es: { skip: "Saltar al contenido", since: "Desde 2001", book: "Reservar", bookTable: "Reservar mesa", seeMenu: "Ver la carta",
       k1: "Del vivero a la mesa", h1: "Lo que todos piden", p1: "Toque un plato para ver los detalles.",
-      k2: "La carta", h2: "Marisco al peso, cocina de siempre", demoPrices: "Precios orientativos en esta propuesta — a confirmar. Avísenos de alergias o intolerancias.",
+      k2: "La carta", h2: "Carta del Mar", cartaSub: "Del vivero a la mesa · Odivelas · Desde 2001", fav: "El más pedido", vivo: "Vivo", special: "Sugerencia de la casa", demoPrices: "Precios orientativos en esta propuesta — a confirmar. Avísenos de alergias o intolerancias.",
       k3: "Desde 2001", h3: "Más de 20 años sirviendo a Odivelas", p3: "Abrimos en 2001 en Ribeirada con una idea sencilla: marisco fresco, vivo en nuestro vivero, y la cocina portuguesa de casa. Seguimos iguales en lo que importa.",
       f1: "abriendo puertas", f2: "en Google", f3: "reseñas de clientes", k4: "La casa", h4: "Salón, vivero y bodega", h5: "Véanos en movimiento",
       k6: "Lo que dicen", p6: "Media de 1747 reseñas en Google Maps.", k7: "Reservas", h7: "Guarde su mesa",
@@ -63,7 +63,7 @@
       h8: "Preguntas frecuentes", k9: "Visítenos", h9: "En Ribeirada, Odivelas", showMap: "Ver mapa", mapNote: "El mapa es de Google y solo carga si acepta.",
       ftC: "Contacto", ftH: "Horario", ftI: "Información", ftP: "Privacidad y cookies", ftCk: "Preferencias de cookies",
       ckTxt: "Solo usamos almacenamiento esencial. El mapa de Google solo carga si acepta.", ckNo: "Rechazar", ckYes: "Aceptar",
-      nav: [["Carta", "#carta"], ["Destacados", "#destaques"], ["La casa", "#galeria"], ["Reseñas", "#criticas"], ["Contacto", "#contacto"]],
+      nav: [["Carta del Mar", "#carta"], ["La casa", "#galeria"], ["Reseñas", "#criticas"], ["Contacto", "#contacto"]],
       openNow: "Abierto ahora · hasta las 23:30", closedToday: "Hoy cerrado · abrimos mañana a las 12:00", opensAt: "Abre hoy a las 12:00", closedNow: "Cerrado ahora · abre a las 12:00",
       directions: "Cómo llegar", reviews: "reseñas Google", askDish: "Reservar y pedir este plato", close: "Cerrar",
       errDate: "Elija un día.", errClosed: "Los miércoles cerramos. Elija otro día.", errName: "Díganos su nombre.", errPast: "Elija un día a partir de hoy.",
@@ -113,41 +113,40 @@
     return ["off", t("closedNow")];
   };
 
-  /* ---------- Destaques ---------- */
-  const D = S.destaques || [];
-  const drawGrid = () => {
-    $("#grid").innerHTML = D.map((p) => `
-      <button class="card" data-id="${esc(p.id)}" aria-label="${esc(L(p.nome))}">
-        <span class="card__img"><img src="${esc(p.foto)}" alt="${esc(L(p.nome))}" loading="lazy" decoding="async" width="600" height="600"></span>
-        <span class="card__body"><span class="card__name">${esc(L(p.nome))}</span><span class="card__price">${esc(p.preco || "")}</span></span>
-      </button>`).join("");
-  };
-  const modal = $("#modal");
-  $("#grid").addEventListener("click", (e) => {
-    const c = e.target.closest(".card"); if (!c) return;
-    const p = D.find((x) => x.id === c.dataset.id); if (!p) return;
-    $("#modalBody").innerHTML = `
-      <button class="modal__x" data-close aria-label="${esc(t("close"))}">✕</button>
-      <div class="modal__grid"><img src="${esc(p.foto)}" alt="${esc(L(p.nome))}">
-      <div class="modal__info"><p class="kicker">${esc(t("k1"))}</p><h3>${esc(L(p.nome))}</h3><p class="card__price">${esc(p.preco || "")}</p>
-      <p class="muted">${esc(L(p.resumo))}</p><a class="btn btn--accent btn--block" href="#reservas" data-close data-dish="${esc(L(p.nome))}">${esc(t("askDish"))}</a></div></div>`;
-    modal.showModal();
-  });
-  modal.addEventListener("click", (e) => {
-    const x = e.target.closest("[data-close]");
-    if (e.target === modal || x) { if (x?.dataset.dish) $("#fNote").value = x.dataset.dish; modal.close(); }
-  });
-
-  /* ---------- Carta com separadores ---------- */
+  /* ---------- Carta do Mar (estilo marítimo) ---------- */
   const C = S.carta || [];
-  let ci = 0;
-  const drawMenu = () => {
-    $("#chips").innerHTML = C.map((c, i) => `<button role="tab" class="chip" data-i="${i}" aria-selected="${i === ci}">${esc(L(c.cat))}</button>`).join("");
-    const c = C[ci] || { itens: [] };
-    $("#menuList").innerHTML = (c.nota ? `<p class="menu-note">${esc(L(c.nota))}</p>` : "") +
-      c.itens.map(([n, p]) => `<div class="menu-row"><span class="menu-row__n">${esc(n)}</span><span class="menu-row__dots" aria-hidden="true"></span><span class="menu-row__p">${esc(p)}</span></div>`).join("");
+  const ICONS = {
+    crab: '<ellipse cx="12" cy="14" rx="6" ry="4"/><path d="M6.5 12.5 3.5 9.5M3.5 9.5C2.2 6.8 4.2 4.6 6.4 5.8M17.5 12.5l3-3M20.5 9.5c1.3-2.7-.7-4.9-2.9-3.7M8.5 17.2 6.5 20.5M15.5 17.2l2 3.3M10.5 18 9.6 21M13.5 18l.9 3"/>',
+    shell: '<path d="M12 20 4 9c3-5 13-5 16 0Z"/><path d="M12 20 8 6.6M12 20V5.4M12 20l4-13.4"/>',
+    fish: '<path d="M3 12c4-6 12-6 16 0-4 6-12 6-16 0Z"/><path d="m19 12 3-4v8Z"/><circle cx="7.5" cy="11" r=".9"/>',
+    anchor: '<circle cx="12" cy="5" r="2"/><path d="M12 7v13M8 10h8M4 14c1 4 4 6 8 6s7-2 8-6"/>',
+    wheel: '<circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4"/><path d="M12 2v20M2 12h20M5 5l14 14M19 5 5 19"/>',
+    glass: '<path d="M7 3h10c0 6-2 9-5 9S7 9 7 3Z"/><path d="M12 12v8M8 20h8"/>'
   };
-  $("#chips").addEventListener("click", (e) => { const b = e.target.closest(".chip"); if (!b) return; ci = +b.dataset.i; drawMenu(); b.scrollIntoView({ block: "nearest", inline: "center" }); });
+  const icon = (k) => `<svg class="cs__ico" viewBox="0 0 24 24" aria-hidden="true">${ICONS[k] || ICONS.anchor}</svg>`;
+  const selo = (s) => s === "fav" ? `<span class="selo selo--fav">★ ${esc(t("fav"))}</span>` : s === "vivo" ? `<span class="selo selo--vivo">≋ ${esc(t("vivo"))}</span>` : "";
+  const drawMenu = () => {
+    $("#chips").innerHTML = C.map((c) => `<a href="#c-${esc(c.id)}">${icon(c.icon)}<span>${esc(L(c.cat))}</span></a>`).join("");
+    const E = S.especial;
+    $("#special").innerHTML = E ? `
+      <div class="sp__badge" aria-hidden="true">★</div>
+      <div><p class="sp__k">${esc(t("special"))}</p><h3 class="sp__t">${esc(L(E.t))}</h3><p class="sp__d">${esc(L(E.d))}</p></div>
+      <p class="sp__p">${esc(L(E.p))}</p>` : "";
+    $("#menuList").innerHTML = C.map((c) => `
+      <article class="cs" id="c-${esc(c.id)}">
+        <header class="cs__head">${icon(c.icon)}<h3>${esc(L(c.cat))}</h3><span class="cs__line" aria-hidden="true"></span></header>
+        ${c.nota ? `<p class="cs__nota">${esc(L(c.nota))}</p>` : ""}
+        <ul class="cs__list">${c.itens.map(([n, p, d, s]) => `
+          <li><div class="it__row"><span class="it__n">${esc(n)}</span><span class="it__dots" aria-hidden="true"></span><span class="it__p">${esc(p)}</span></div>
+          ${d || s ? `<div class="it__sub">${s ? selo(s) : ""}${d ? `<span>${esc(L(d))}</span>` : ""}</div>` : ""}</li>`).join("")}
+        </ul>
+      </article>`).join("");
+  };
+  $("#chips").addEventListener("click", (e) => {
+    const a = e.target.closest("a"); if (!a) return; e.preventDefault();
+    const el = document.querySelector(a.getAttribute("href"));
+    if (el) scrollTo({ top: el.getBoundingClientRect().top + scrollY - (hdr.offsetHeight + 70), behavior: "smooth" });
+  });
 
   /* ---------- Galeria + lightbox ---------- */
   const G = S.galeria || [];
@@ -217,7 +216,7 @@
     $("#heroRating").textContent = `${S.google.nota} · ${S.google.criticas} ${t("reviews")}`;
     const [st, txt] = openState();
     $("#openNow").innerHTML = `<span class="dot${st === "on" ? "" : " dot--off"}" aria-hidden="true"></span>${esc(txt)}`;
-    drawGrid(); drawMenu(); drawPeople();
+    drawMenu(); drawPeople();
     $("#gal").innerHTML = G.map(([src, cap], i) => `<button class="gal__item" data-i="${i}" aria-label="${esc(L(cap))}"><img src="${esc(src)}" alt="${esc(L(cap))}" loading="lazy" decoding="async" width="600" height="600"><span>${esc(L(cap))}</span></button>`).join("");
     $("#reelList").innerHTML = (S.reels || []).map((r) => `<a class="reel" href="${esc(r.url)}" target="_blank" rel="noopener"><img src="${esc(r.img)}" alt="" loading="lazy" decoding="async" width="360" height="640"><span class="reel__play" aria-hidden="true">▶</span><span class="reel__t">${esc(L(r.t))}</span></a>`).join("");
     $("#quotes").innerHTML = (S.criticas || []).map(([who, q]) => `<blockquote class="quote"><p>“${esc(L(q))}”</p><footer><span class="stars">★★★★★</span> · ${esc(who)} · Google</footer></blockquote>`).join("");
@@ -250,7 +249,7 @@
   if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
     io = new IntersectionObserver((es) => es.forEach((en) => { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } }), { rootMargin: "0px 0px -8% 0px" });
   }
-  function observe() { if (!io) return; $$(".sec__head, .card, .quote, .reel").forEach((el) => { if (!el.classList.contains("rv")) { el.classList.add("rv"); io.observe(el); } }); }
+  function observe() { if (!io) return; $$(".sec__head, .cs, .quote, .reel").forEach((el) => { if (!el.classList.contains("rv")) { el.classList.add("rv"); io.observe(el); } }); }
 
   render();
   onScroll();

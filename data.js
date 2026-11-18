@@ -47,49 +47,54 @@ window.SITE = {
     video: "img/hero.mp4", poster: "img/hero-poster.webp" // vídeo do Reel DYFfiPvtzbB (0–9 s)
   },
 
-  // ---- Destaques (cartões com foto → ficha) — nomes a confirmar com o cliente ----
-  destaques: [
-    { id: "carabineiro", foto: "img/carabineiro.webp", preco: "PVP / kg",
-      nome: { pt: "Carabineiro", en: "Scarlet prawn", es: "Carabinero" },
-      resumo: { pt: "Grande, intenso e servido simples — como deve ser. Peça o calibre do dia.", en: "Big, intense and served simply. Ask for today's size.", es: "Grande, intenso y servido sencillo. Pregunte el calibre del día." } },
-    { id: "sapateira", foto: "img/marisco-cozido.webp", preco: "PVP / kg",
-      nome: { pt: "Marisco cozido do viveiro", en: "Boiled shellfish from the tank", es: "Marisco cocido del vivero" },
-      resumo: { pt: "Sapateira, santola, lavagante: escolhe-se vivo e coze-se na hora.", en: "Brown crab, spider crab, lobster: picked alive and cooked to order.", es: "Buey, centollo, bogavante: se elige vivo y se cuece al momento." } },
-    { id: "presunto", foto: "img/presunto.webp", preco: "12,50 €", // DEMO
-      nome: { pt: "Presunto cortado à faca", en: "Hand-carved cured ham", es: "Jamón cortado a cuchillo" },
-      resumo: { pt: "A entrada que os clientes mais elogiam, com queijo amanteigado e pão torrado.", en: "Our guests' favourite starter, with buttery cheese and toasted bread.", es: "La entrada que más elogian los clientes, con queso cremoso y pan tostado." } },
-    { id: "cozido", foto: "img/assado.webp", preco: "16,50 €", // DEMO
-      nome: { pt: "Cozido à portuguesa", en: "Portuguese cozido", es: "Cocido portugués" },
-      resumo: { pt: "Carnes, enchidos e legumes, em dose generosa para partilhar.", en: "Meats, sausages and vegetables in a generous sharing portion.", es: "Carnes, embutidos y verduras, en ración generosa para compartir." } },
-    { id: "tacho", foto: "img/tacho.webp", preco: "15,00 €", // DEMO
-      nome: { pt: "Prato de tacho da casa", en: "House slow-cooked stew", es: "Guiso de la casa" },
-      resumo: { pt: "Cozinha lenta, molho escuro e coentros frescos. Muda conforme o dia.", en: "Slow-cooked, rich sauce and fresh coriander. Changes daily.", es: "Cocina lenta, salsa oscura y cilantro fresco. Cambia según el día." } },
-    { id: "doce", foto: "img/sobremesa.webp", preco: "4,50 €", // DEMO
-      nome: { pt: "Doce da casa", en: "House dessert", es: "Postre de la casa" },
-      resumo: { pt: "Cremoso, com canela por cima. Para fechar bem a refeição.", en: "Creamy, dusted with cinnamon. The right way to finish.", es: "Cremoso, con canela por encima. Para cerrar bien la comida." } }
-  ],
-
-  // ---- Carta com preços (DEMO: preços indicativos para a proposta) ----
+  // ---- Carta do Mar ----
+  // Pratos tirados das críticas Google (marisco, petiscos, sapateira, camarão, santola, lavagante azul,
+  // presunto, queijo amanteigado, pão torrado) e dos vídeos do Instagram (carabineiro, viveiro, adega).
+  // DEMO: preços indicativos e alguns pratos de cervejaria clássica — confirmar com a casa.
+  // Item: [nome, preço, descrição {pt,en,es} opcional, selo opcional: "fav" (mais pedido) | "vivo" (do viveiro)]
+  especial: {
+    t: { pt: "Mariscada Ribeirada", en: "Ribeirada Seafood Platter", es: "Mariscada Ribeirada" },
+    d: { pt: "Para dois: sapateira recheada, santola, camarão, lavagante azul do viveiro e o prego para fechar.", en: "For two: dressed brown crab, spider crab, prawns, blue lobster from the tank and a steak roll to finish.", es: "Para dos: buey relleno, centollo, gambas, bogavante azul del vivero y el prego para terminar." },
+    p: { pt: "desde 79 € · 2 pessoas", en: "from €79 · for 2", es: "desde 79 € · 2 personas" } // DEMO
+  },
   carta: [
-    { cat: { pt: "Marisco", en: "Shellfish", es: "Marisco" }, nota: { pt: "Ao peso, conforme o mercado. Pergunte o preço do dia.", en: "By weight, at market price. Ask for today's price.", es: "Al peso, según mercado. Pregunte el precio del día." }, itens: [
-      ["Camarão cozido", "PVP / kg"], ["Gambas à guilho", "16,00 €"], ["Amêijoa à Bulhão Pato", "17,50 €"],
-      ["Sapateira recheada", "PVP / kg"], ["Santola", "PVP / kg"], ["Lavagante azul", "PVP / kg"], ["Carabineiro", "PVP / kg"], ["Percebes", "PVP / kg"]
-    ]},
-    { cat: { pt: "Entradas", en: "Starters", es: "Entrantes" }, itens: [
-      ["Presunto cortado à faca", "12,50 €"], ["Queijo amanteigado", "9,50 €"], ["Pão torrado com manteiga", "2,50 €"], ["Pica-pau do lombo", "13,00 €"], ["Pão, manteiga e azeitonas", "2,00 €"]
-    ]},
-    { cat: { pt: "Peixe", en: "Fish", es: "Pescado" }, itens: [
-      ["Arroz de marisco (2 pax)", "38,00 €"], ["Cataplana de peixe (2 pax)", "36,00 €"], ["Bacalhau à Ribeirada", "17,50 €"], ["Peixe grelhado do dia", "PVP / kg"]
-    ]},
-    { cat: { pt: "Carne", en: "Meat", es: "Carne" }, itens: [
-      ["Prego no pão", "6,50 €"], ["Bife à cervejaria", "16,00 €"], ["Cozido à portuguesa", "16,50 €"], ["Prato de tacho do dia", "15,00 €"]
-    ]},
-    { cat: { pt: "Sobremesas", en: "Desserts", es: "Postres" }, itens: [
-      ["Doce da casa", "4,50 €"], ["Leite-creme queimado", "4,50 €"], ["Mousse de chocolate", "4,00 €"], ["Fruta da época", "3,50 €"]
-    ]},
-    { cat: { pt: "Adega", en: "Wine cellar", es: "Bodega" }, nota: { pt: "Garrafeira climatizada com vinhos portugueses. Peça a sugestão para o seu prato.", en: "Climate-controlled cellar of Portuguese wines. Ask for a pairing.", es: "Bodega climatizada con vinos portugueses. Pida la sugerencia para su plato." }, itens: [
-      ["Imperial / caneca", "2,00 € / 4,50 €"], ["Vinho da casa (jarro)", "9,00 €"], ["Alvarinho", "22,00 €"], ["Douro tinto", "19,00 €"], ["Espumante Bairrada", "24,00 €"]
-    ]}
+    { id: "viveiro", icon: "crab", cat: { pt: "Do Viveiro", en: "From the Tank", es: "Del Vivero" },
+      nota: { pt: "Vivo, escolhido por si e cozido na hora. Ao peso, preço do dia.", en: "Alive, picked by you and cooked to order. By weight, at the day's price.", es: "Vivo, elegido por usted y cocido al momento. Al peso, precio del día." },
+      itens: [
+        ["Lavagante azul", "PVP / kg", { pt: "O rei do viveiro", en: "King of the tank", es: "El rey del vivero" }, "vivo"],
+        ["Santola", "PVP / kg", { pt: "Recheada à moda da casa", en: "Dressed, house style", es: "Rellena al estilo de la casa" }, "vivo"],
+        ["Sapateira recheada", "PVP / kg", { pt: "A mais pedida pelos clientes", en: "Our guests' favourite", es: "La más pedida" }, "fav"],
+        ["Carabineiro", "PVP / kg", { pt: "Grelhado ou cozido", en: "Grilled or boiled", es: "A la plancha o cocido" }],
+        ["Camarão cozido", "PVP / kg"],
+        ["Percebes", "PVP / kg"]
+      ]},
+    { id: "petiscos", icon: "shell", cat: { pt: "Petiscos", en: "Small Plates", es: "Para Picar" },
+      itens: [
+        ["Presunto cortado à faca", "12,50 €", { pt: "Fatiado na hora, à vista", en: "Hand-carved at the table", es: "Cortado al momento" }, "fav"],
+        ["Queijo amanteigado", "9,50 €"],
+        ["Pão torrado com manteiga", "2,50 €"],
+        ["Amêijoa à Bulhão Pato", "17,50 €", { pt: "Alho, coentros e limão", en: "Garlic, coriander, lemon", es: "Ajo, cilantro y limón" }],
+        ["Gambas à guilho", "16,00 €"],
+        ["Pica-pau do lombo", "13,00 €"]
+      ]},
+    { id: "mar", icon: "fish", cat: { pt: "Do Mar", en: "From the Sea", es: "Del Mar" },
+      itens: [
+        ["Arroz de marisco", "38,00 €", { pt: "Malandrinho, para dois", en: "Soupy rice, for two", es: "Meloso, para dos" }],
+        ["Cataplana de peixe e marisco", "36,00 €", { pt: "Para dois", en: "For two", es: "Para dos" }],
+        ["Bacalhau à Ribeirada", "17,50 €"],
+        ["Peixe grelhado do dia", "PVP / kg"]
+      ]},
+    { id: "terra", icon: "anchor", cat: { pt: "Da Terra", en: "From the Land", es: "De la Tierra" },
+      itens: [
+        ["Prego no pão", "6,50 €", { pt: "O fecho clássico de uma mariscada", en: "The classic way to end a seafood feast", es: "El cierre clásico de una mariscada" }, "fav"],
+        ["Bife à cervejaria", "16,00 €"],
+        ["Prato de tacho do dia", "15,00 €"]
+      ]},
+    { id: "doces", icon: "wheel", cat: { pt: "Doces", en: "Desserts", es: "Postres" },
+      itens: [["Doce da casa", "4,50 €"], ["Leite-creme queimado", "4,50 €"], ["Mousse de chocolate", "4,00 €"], ["Fruta da época", "3,50 €"]]},
+    { id: "adega", icon: "glass", cat: { pt: "Adega", en: "Cellar", es: "Bodega" },
+      nota: { pt: "Garrafeira climatizada de vinhos portugueses. Peça a sugestão para o seu prato.", en: "Climate-controlled cellar of Portuguese wines. Ask for a pairing.", es: "Bodega climatizada de vinos portugueses. Pida la sugerencia para su plato." },
+      itens: [["Imperial · Caneca", "2,00 € · 4,50 €"], ["Vinho da casa, jarro", "9,00 €"], ["Alvarinho", "22,00 €"], ["Douro tinto", "19,00 €"], ["Espumante Bairrada", "24,00 €"]]}
   ],
 
   galeria: [
@@ -123,6 +128,9 @@ window.SITE = {
     [{ pt: "Aceitam grupos e aniversários?", en: "Do you take groups and celebrations?", es: "¿Aceptan grupos y cumpleaños?" },
      { pt: "Sim. Para grupos grandes, reserve com antecedência por telefone.", en: "Yes. For large groups, please book ahead by phone.", es: "Sí. Para grupos grandes, reserve con antelación por teléfono." }],
     [{ pt: "Têm opções sem marisco?", en: "Do you have non-seafood options?", es: "¿Tienen opciones sin marisco?" },
-     { pt: "Sim: carnes, pratos de tacho e peixe. Informe-nos de alergias ao reservar.", en: "Yes: meat, stews and fish. Let us know about allergies when booking.", es: "Sí: carnes, guisos y pescado. Avísenos de alergias al reservar." }]
+     { pt: "Sim: carnes, pratos de tacho e peixe. Informe-nos de alergias ao reservar.", en: "Yes: meat, stews and fish. Let us know about allergies when booking.", es: "Sí: carnes, guisos y pescado. Avísenos de alergias al reservar." }],
+    // Fonte: críticas Google ("Parque de estacionamento gratuito", "Muitos lugares")
+    [{ pt: "Há estacionamento?", en: "Is there parking?", es: "¿Hay aparcamiento?" },
+     { pt: "Sim, há parque de estacionamento gratuito perto do restaurante.", en: "Yes, there's free parking close to the restaurant.", es: "Sí, hay aparcamiento gratuito cerca del restaurante." }]
   ]
 };

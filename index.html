@@ -24,7 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="css/styles.css?v=1.2">
+<link rel="stylesheet" href="css/styles.css?v=1.3">
 <link rel="preload" as="image" href="img/hero-poster.webp" fetchpriority="high">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Restaurant","name":"Cervejaria da Ribeirada","url":"https://francobrito2010-png.github.io/cervejaria-ribeirada-demo/","image":"https://francobrito2010-png.github.io/cervejaria-ribeirada-demo/img/og.jpg","telephone":"+351219345551","email":"geral@cervejariadaribeirada.com","servesCuisine":["Marisco","Portuguesa"],"priceRange":"€€","acceptsReservations":"True","foundingDate":"2001","address":{"@type":"PostalAddress","streetAddress":"Av. Amália Rodrigues 10C","postalCode":"2675-623","addressLocality":"Odivelas","addressCountry":"PT"},"geo":{"@type":"GeoCoordinates","latitude":38.7970342,"longitude":-9.1808891},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Thursday","Friday","Saturday","Sunday"],"opens":"12:00","closes":"23:30"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.2","reviewCount":"1747"},"sameAs":["https://www.instagram.com/cervejariadaribeirada/"]}
@@ -61,7 +61,7 @@
 <main id="main">
   <section class="hero" id="top" aria-label="Cervejaria da Ribeirada">
     <div class="hero__bg" aria-hidden="true"></div>
-    <video class="hero__video" id="heroVideo" src="img/hero.mp4?v=1.2" poster="img/hero-poster.webp" autoplay muted loop playsinline preload="auto" width="720" height="1280" aria-label="O nome Ribeirada mergulha no mar, seguido da sala, do marisco e da adega"></video>
+    <video class="hero__video" id="heroVideo" src="img/hero.mp4?v=1.3" poster="img/hero-poster.webp" autoplay muted loop playsinline preload="auto" width="720" height="1280" aria-label="O nome Ribeirada mergulha no mar, seguido da sala, do marisco e da adega"></video>
     <div class="hero__over">
       <p class="eyebrow"><span class="stars" aria-hidden="true">★</span> <span id="heroRating">4,2 · 1747 críticas Google</span></p>
       <div class="hero__ctas"><a class="btn btn--accent" href="#reservas" data-i18n="bookTable">Reservar mesa</a><a class="btn btn--glass" href="#carta" data-i18n="seeMenu">Ver a carta</a></div>
@@ -75,16 +75,52 @@
     <p class="hero__open" id="openNow"></p>
   </section>
 
-  <section class="sec" id="destaques">
-    <div class="sec__head"><p class="kicker" data-i18n="k1">Do viveiro para a mesa</p><h2 data-i18n="h1">O que nos pedem sempre</h2><p class="muted" data-i18n="p1">Toque num prato para ver os detalhes.</p></div>
-    <div class="grid" id="grid"></div>
-  </section>
+  <section class="carta" id="carta" aria-labelledby="cartaT">
+    <svg class="carta__waves" aria-hidden="true" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0 60 Q 75 20 150 60 T 300 60 T 450 60 T 600 60 T 750 60 T 900 60 T 1050 60 T 1200 60" /><path d="M0 90 Q 75 50 150 90 T 300 90 T 450 90 T 600 90 T 750 90 T 900 90 T 1050 90 T 1200 90" /></svg>
+    <div class="carta__bubbles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
 
-  <section class="sec sec--soft" id="carta">
-    <div class="sec__head"><p class="kicker" data-i18n="k2">A carta</p><h2 data-i18n="h2">Marisco ao peso, cozinha de sempre</h2></div>
-    <div class="chips" id="chips" role="tablist" aria-label="Categorias da carta"></div>
-    <div class="menu-list" id="menuList" role="tabpanel"></div>
-    <p class="small muted demo-note" data-i18n="demoPrices">Preços indicativos nesta proposta — a confirmar com a casa. Informe-nos de alergias ou intolerâncias.</p>
+    <div class="carta__card">
+      <span class="carta__corner carta__corner--tl" aria-hidden="true"></span><span class="carta__corner carta__corner--tr" aria-hidden="true"></span>
+      <span class="carta__corner carta__corner--bl" aria-hidden="true"></span><span class="carta__corner carta__corner--br" aria-hidden="true"></span>
+
+      <header class="carta__head">
+        <svg class="shark" viewBox="0 0 600 220" role="img" aria-label="Tubarão branco, símbolo da Ribeirada">
+          <defs>
+            <linearGradient id="sharkSkin" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#7fa6c6"/><stop offset=".42" stop-color="#cfe0ee"/><stop offset=".55" stop-color="#f7fbff"/><stop offset="1" stop-color="#ffffff"/>
+            </linearGradient>
+            <linearGradient id="sharkFin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5f8bb0"/><stop offset="1" stop-color="#b9d2e6"/></linearGradient>
+          </defs>
+          <g class="shark__body">
+            <path class="shark__fin" d="M300 56 C 308 28 324 8 348 0 C 346 26 350 44 368 55 Z" fill="url(#sharkFin)"/>
+            <path class="shark__fin" d="M142 96 L 134 78 L 160 93 Z" fill="url(#sharkFin)"/>
+            <path class="shark__tail" d="M78 104 C 56 80 30 46 6 22 C 30 62 42 92 50 110 Z" fill="url(#sharkFin)"/>
+            <path class="shark__tail" d="M50 114 C 38 134 28 152 16 172 C 46 152 64 132 80 120 Z" fill="url(#sharkSkin)"/>
+            <path d="M44 112 C 120 70 262 46 384 50 C 470 53 540 78 578 108 C 552 128 478 152 384 155 C 270 158 150 142 44 112 Z" fill="url(#sharkSkin)"/>
+            <path class="shark__fin" d="M384 142 C 372 170 352 194 326 212 C 362 202 398 176 418 148 Z" fill="url(#sharkFin)"/>
+            <path d="M206 146 L 190 170 L 232 149 Z" fill="url(#sharkFin)"/>
+            <path class="shark__line" d="M70 112 C 170 104 300 100 430 104 C 480 106 530 112 566 116" />
+            <path class="shark__gill" d="M440 86 C 446 100 446 116 440 130 M452 84 C 458 99 458 117 452 132 M464 83 C 470 98 470 116 464 131 M476 84 C 481 98 481 114 476 128 M487 86 C 491 98 491 112 487 124" />
+            <path class="shark__mouth" d="M520 124 C 538 128 556 124 572 114" />
+            <circle cx="530" cy="96" r="5.5" fill="#06121f"/><circle cx="531.6" cy="94.4" r="1.6" fill="#5cc4ff"/>
+          </g>
+        </svg>
+        <p class="kicker" data-i18n="k2">A carta</p>
+        <h2 id="cartaT" class="carta__title" data-i18n="h2">Carta do Mar</h2>
+        <p class="carta__sub" data-i18n="cartaSub">Do viveiro para a mesa · Odivelas · Desde 2001</p>
+        <div class="rope" aria-hidden="true"></div>
+      </header>
+
+      <nav class="carta__nav" id="chips" aria-label="Secções da carta"></nav>
+
+      <div class="carta__special" id="special"></div>
+      <div class="carta__cols" id="menuList"></div>
+
+      <footer class="carta__foot">
+        <p data-i18n="demoPrices">Preços indicativos nesta proposta — a confirmar com a casa. Informe-nos de alergias ou intolerâncias.</p>
+        <a class="btn btn--accent" href="#reservas" data-i18n="bookTable">Reservar mesa</a>
+      </footer>
+    </div>
   </section>
 
   <section class="sec story" id="historia">
@@ -178,7 +214,7 @@
 
 <noscript><div class="noscript">Cervejaria da Ribeirada · Av. Amália Rodrigues 10C, Odivelas · Reservas: 21 934 5551 · 12:00–23:30 (encerrado à quarta)</div></noscript>
 
-<script src="data.js?v=1.2"></script>
-<script src="js/app.js?v=1.2"></script>
+<script src="data.js?v=1.3"></script>
+<script src="js/app.js?v=1.3"></script>
 </body>
 </html>

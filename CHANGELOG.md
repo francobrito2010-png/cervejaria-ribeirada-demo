@@ -11,3 +11,9 @@
 - Topo refeito: vídeo em plano completo e centrado, a meia velocidade (18 s, fluido), sem texto por cima do nome.
 - Título e horário passam para logo abaixo do vídeo.
 - Botão flotante já não tapa os botões do topo.
+
+## v1.3 — 2026-11-18
+- Nova "Carta do Mar": estilo marítimo com tubarão branco (detalhes azuis) a nadar, ondas, bolhas e moldura de carta náutica.
+- Secções Do Viveiro, Petiscos, Do Mar, Da Terra, Doces e Adega, com selos "Vivo" e "Mais pedido" e a sugestão "Mariscada Ribeirada".
+- Pratos baseados nas críticas Google (sapateira, santola, lavagante azul, camarão, presunto, queijo amanteigado, pão torrado) e nos vídeos do Instagram.
+- Removida a grelha de destaques com fotos. FAQ: estacionamento gratuito (Google).
